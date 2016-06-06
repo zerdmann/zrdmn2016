@@ -1,0 +1,19 @@
+{
+  "name": "zrdmn",
+  "version": "1.0.0",
+  "description": "rebuild homepage summer 2016",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerdmann/zrdmn2016.git"
+  },
+  "author": "@zerdmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zerdmann/zrdmn2016/issues"
+  },
+  "homepage": "https://github.com/zerdmann/zrdmn2016#readme"
+}
