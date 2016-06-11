@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/zerdmann/zrdmn2016#readme",
   "devDependencies": {
+    "breakpoint-sass": "^2.7.0",
     "grunt": "^1.0.1",
     "grunt-bake": "^1.7.2",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^1.2.0"
   },

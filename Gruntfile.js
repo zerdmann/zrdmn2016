@@ -18,21 +18,35 @@ module.exports = function(grunt) {
         }
 
   },
+  copy: {
+  	  fonts: {
+    	expand: true,
+    	src: 'fonts/*',
+    	dest: 'release/',
+    },
+
+  },
   watch: {
       sass : {
-        files : ['./styles/*.scss'],
+        files : ['./styles/**'],
         tasks : ['sass']
       },
       bake : {
         files : ["./base.html", "/partials/**"],
         tasks : ['bake']
-     	}
+     	},
+     	fonts: {
+        	files : ['./fonts/**'],
+        	tasks: ['copy:fonts']
+     	},
  	}
  });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
  	grunt.loadNpmTasks('grunt-bake');
  	grunt.loadNpmTasks('grunt-sass');
+ 	grunt.loadNpmTasks('grunt-contrib-copy');
+
 
  	grunt.registerTask('default', ['watch']);
 

@@ -364,4 +364,75 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+@font-face {
+  font-family: "sectra-super-italic";
+  font-style: italic;
+  font-weight: 900;
+  src: url("/fonts/GT-Sectra-Display-Trial-Super-Italic.otf"); }
+
+@font-face {
+  font-family: "pressura-regular";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/GT-Pressura-Trial-Regular.otf"); }
+
+@font-face {
+  font-family: "pressura-regular";
+  font-style: normal;
+  font-weight: 100;
+  src: url("/fonts/GT-Pressura-Trial-Light.otf"); }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px; }
+
+body {
+  background-color: #f77e5e;
+  overflow-x: hidden; }
+
+.inner_border {
+  height: 95vh;
+  width: 95vw;
+  margin: 2.5vh 2.5vw; }
+  @media (min-width: 786px) {
+    .inner_border {
+      border: 5px solid #3dbd5d; } }
+
+.header_box {
+  width: 95%;
+  margin: 0 auto; }
+  .header_box--title {
+    font-family: "sectra-super-italic";
+    font-style: italic;
+    color: #303030;
+    font-size: 4.4rem;
+    font-size: 21vw;
+    line-height: 0.8em;
+    letter-spacing: -2px;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    font-weight: normal; }
+    @media (min-width: 786px) {
+      .header_box--title {
+        font-size: 5rem; } }
+  .header_box--underline {
+    width: 100%;
+    height: 3px;
+    height: 0.5vh;
+    background-color: #3dbd5d;
+    margin-bottom: 3rem; }
+  .header_box--subhead {
+    font-family: "pressura-regular";
+    color: #f4f4f4;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 3rem;
+    font-size: 5.5vw;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    letter-spacing: 0.3vw;
+    margin: .2em auto; }
+
 /*# sourceMappingURL=main.css.map */
