@@ -9,12 +9,16 @@ html {
 body {
 	background-color: $pink;
 	overflow-x: hidden;
+	z-index: -2;
 }
 
 .inner_border {
+	position: fixed;
+	z-index:-1;
 	height:95vh;
 	width:95vw;
 	margin: 2.5vh 2.5vw;
+	pointer-events: none;
 	@include breakpoint($desktop)
 	{
 			border: 5px solid $green;
@@ -24,8 +28,13 @@ body {
 }
 
 .header_box {
-		width: 95%;
+		width: 90%;
 		margin: 0 auto;
+		margin-bottom: 6rem;
+
+		@include breakpoint($desktop){
+			max-width: 700px;
+		}
 
 		&--title{
 		font-family: "sectra-super-italic";
@@ -49,6 +58,7 @@ body {
 		height: 0.5vh;
 		background-color: $green;
 		margin-bottom: 3rem;
+		margin-bottom: 4.5vw;
 	}
 
 	&--subhead {
@@ -62,5 +72,94 @@ body {
 		letter-spacing: 2px;
 		letter-spacing: 0.3vw;
 		margin: .2em auto;
+	}
+
+	&--link {
+		display: inline-block;
+		min-width: 3rem;
+		min-height: 3rem;
+		max-width: 64px;
+		max-height: 64px;
+		width: 15vw;
+		height: 15vw;
+
+		// background: $white;
+		margin-top: 0.5rem;
+		margin-right: 0.5rem;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		&.github {
+			background-image: url('/img/github.png');
+		}
+
+		&.twitter {
+			background-image: url('/img/twitter.png');
+		}
+	}
+}
+
+.contact_box {
+	display: block;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: auto;
+	min-height: 8rem;
+	border: 3px solid $white;
+	max-width: 500px;
+	padding-left:2rem;
+	padding-top: 1rem;
+	&--subhead{
+		margin-top: 0;
+		margin-bottom: 1rem;
+		font-family: "pressura-regular";
+		color: $white;
+		font-style: normal;
+		font-weight: 100;
+		font-size:3rem;
+		font-size: 5.5vw;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		letter-spacing: 0.3vw;
+		line-height: 1.5em;
+
+	}
+
+	@mixin polka($bg_size, $dot_size, $base_color, $color_1, $color_2) {
+  background: $base_color;
+  background-image: radial-gradient($color_1 $dot_size, transparent 0),
+                    radial-gradient($color_2 $dot_size, transparent 0);
+  background-size: $bg_size $bg_size;
+  background-position: 0 0, $bg_size/2 $bg_size/2;
+}
+
+	&--button{
+		-webkit-appearance:none;
+		text-decoration: none;
+		cursor: pointer;
+		max-width: 400px;
+		min-height: 2.5em;
+		padding-left: 1.1em;
+		padding-right:1.1em;
+		border: none;
+		margin-top: 0;
+		margin-bottom: 1rem;
+		font-family: "pressura-regular";
+		color: $white;
+		font-style: italic;
+		font-weight: 300;
+		font-size:3rem;
+		font-size: 5.5vw;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		letter-spacing: 0.3vw;
+		line-height: 1.5em;
+		height: 1.5em;
+		outline: none;
+	    transition: background-color 0.5s ease;
+	    @include polka(2vmin, 20%, $pink, $grey, $grey);
+		&:hover {
+			background-color: $grey;
+		}
 	}
 }

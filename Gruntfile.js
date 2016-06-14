@@ -24,6 +24,11 @@ module.exports = function(grunt) {
     	src: 'fonts/*',
     	dest: 'release/',
     },
+    img: {
+      expand: true,
+      src: 'img/*',
+      dest: 'release/',
+    }
 
   },
   watch: {
@@ -39,6 +44,10 @@ module.exports = function(grunt) {
         	files : ['./fonts/**'],
         	tasks: ['copy:fonts']
      	},
+      fonts: {
+          files : ['./img/**'],
+          tasks: ['copy:img']
+      },
  	}
  });
 
