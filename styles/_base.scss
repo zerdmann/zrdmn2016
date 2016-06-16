@@ -10,6 +10,7 @@ body {
 	background-color: $pink;
 	overflow-x: hidden;
 	z-index: -2;
+	max-height: 100vh;
 }
 
 .inner_border {
@@ -32,8 +33,13 @@ body {
 		margin: 0 auto;
 		margin-bottom: 6rem;
 
-		@include breakpoint($desktop){
+		@include breakpoint($desktop)
+		{
 			max-width: 700px;
+			padding-top: 5vh;
+			position: absolute;
+			left:50%;
+			transform: translateX(-10rem)
 		}
 
 		&--title{
@@ -59,6 +65,10 @@ body {
 		background-color: $green;
 		margin-bottom: 3rem;
 		margin-bottom: 4.5vw;
+		@include breakpoint($desktop){
+			max-width: 21rem;
+			margin-bottom: 1rem;
+		}
 	}
 
 	&--subhead {
@@ -72,6 +82,9 @@ body {
 		letter-spacing: 2px;
 		letter-spacing: 0.3vw;
 		margin: .2em auto;
+		@include breakpoint($desktop){
+			font-size: 1.5rem;
+		}
 	}
 
 	&--link {
@@ -82,8 +95,12 @@ body {
 		max-height: 64px;
 		width: 15vw;
 		height: 15vw;
+		@include breakpoint($desktop)
+		{
+			width: 1.5rem;
+			height: 1.5rem;
+		}
 
-		// background: $white;
 		margin-top: 0.5rem;
 		margin-right: 0.5rem;
 		background-size: contain;
@@ -104,11 +121,25 @@ body {
 	width: 90%;
 	margin-left: 5%;
 	margin-right: auto;
-	min-height: 8rem;
+	min-height: 9rem;
+	margin-bottom: 3rem;
 	border: 3px solid $white;
 	max-width: 500px;
 	padding-left:2rem;
 	padding-top: 1rem;
+	padding-bottom: 1rem;
+	@include breakpoint($desktop)
+	{
+		position: absolute;
+		left:-10px;
+		border: 5px solid $white;
+		margin-left: 0;
+		bottom: 4rem;
+		margin-bottom: 0;
+
+
+	}
+
 	&--subhead{
 		margin-top: 0;
 		margin-bottom: 1rem;
@@ -119,9 +150,17 @@ body {
 		font-size:3rem;
 		font-size: 5.5vw;
 		text-transform: uppercase;
-		letter-spacing: 2px;
+		letter-spacing: 0.01em;
 		letter-spacing: 0.3vw;
 		line-height: 1.5em;
+
+		@include breakpoint($desktop)
+		{
+			font-size: 1.5rem;
+			letter-spacing: 0.13em;
+			margin-left: 3rem;
+		}
+
 
 	}
 
@@ -134,11 +173,12 @@ body {
 }
 
 	&--button{
+		display: inline;
 		-webkit-appearance:none;
 		text-decoration: none;
 		cursor: pointer;
 		max-width: 400px;
-		min-height: 2.5em;
+		min-height: 2.5rem;
 		padding-left: 1.1em;
 		padding-right:1.1em;
 		border: none;
@@ -160,6 +200,20 @@ body {
 	    @include polka(2vmin, 20%, $pink, $grey, $grey);
 		&:hover {
 			background-color: $grey;
+		}
+
+		@include breakpoint($desktop)
+		{
+			display: block;
+			font-size: 1.5rem;
+		    @include polka(6px, 1px, transparent, $grey, $grey);
+		    margin-left: 3rem;
+		    height: 3rem;
+		    width: 14rem;
+		    line-height: 3rem;
+		    		letter-spacing: 3px;
+
+
 		}
 	}
 }

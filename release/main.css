@@ -397,7 +397,8 @@ html {
 body {
   background-color: #f77e5e;
   overflow-x: hidden;
-  z-index: -2; }
+  z-index: -2;
+  max-height: 100vh; }
 
 .inner_border {
   position: fixed;
@@ -416,7 +417,11 @@ body {
   margin-bottom: 6rem; }
   @media (min-width: 786px) {
     .header_box {
-      max-width: 700px; } }
+      max-width: 700px;
+      padding-top: 5vh;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-10rem); } }
   .header_box--title {
     font-family: "sectra-super-italic";
     font-style: italic;
@@ -438,6 +443,10 @@ body {
     background-color: #3dbd5d;
     margin-bottom: 3rem;
     margin-bottom: 4.5vw; }
+    @media (min-width: 786px) {
+      .header_box--underline {
+        max-width: 21rem;
+        margin-bottom: 1rem; } }
   .header_box--subhead {
     font-family: "pressura-regular";
     color: #f4f4f4;
@@ -449,6 +458,9 @@ body {
     letter-spacing: 2px;
     letter-spacing: 0.3vw;
     margin: .2em auto; }
+    @media (min-width: 786px) {
+      .header_box--subhead {
+        font-size: 1.5rem; } }
   .header_box--link {
     display: inline-block;
     min-width: 3rem;
@@ -462,6 +474,10 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat; }
+    @media (min-width: 786px) {
+      .header_box--link {
+        width: 1.5rem;
+        height: 1.5rem; } }
     .header_box--link.github {
       background-image: url("/img/github.png"); }
     .header_box--link.twitter {
@@ -472,11 +488,21 @@ body {
   width: 90%;
   margin-left: 5%;
   margin-right: auto;
-  min-height: 8rem;
+  min-height: 9rem;
+  margin-bottom: 3rem;
   border: 3px solid #f4f4f4;
   max-width: 500px;
   padding-left: 2rem;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 786px) {
+    .contact_box {
+      position: absolute;
+      left: -10px;
+      border: 5px solid #f4f4f4;
+      margin-left: 0;
+      bottom: 4rem;
+      margin-bottom: 0; } }
   .contact_box--subhead {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -487,15 +513,21 @@ body {
     font-size: 3rem;
     font-size: 5.5vw;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.01em;
     letter-spacing: 0.3vw;
     line-height: 1.5em; }
+    @media (min-width: 786px) {
+      .contact_box--subhead {
+        font-size: 1.5rem;
+        letter-spacing: 0.13em;
+        margin-left: 3rem; } }
   .contact_box--button {
+    display: inline;
     -webkit-appearance: none;
     text-decoration: none;
     cursor: pointer;
     max-width: 400px;
-    min-height: 2.5em;
+    min-height: 2.5rem;
     padding-left: 1.1em;
     padding-right: 1.1em;
     border: none;
@@ -520,5 +552,18 @@ body {
     background-position: 0 0, 1vmin 1vmin; }
     .contact_box--button:hover {
       background-color: #303030; }
+    @media (min-width: 786px) {
+      .contact_box--button {
+        display: block;
+        font-size: 1.5rem;
+        background: transparent;
+        background-image: radial-gradient(#303030 1px, transparent 0), radial-gradient(#303030 1px, transparent 0);
+        background-size: 6px 6px;
+        background-position: 0 0, 3px 3px;
+        margin-left: 3rem;
+        height: 3rem;
+        width: 14rem;
+        line-height: 3rem;
+        letter-spacing: 3px; } }
 
 /*# sourceMappingURL=main.css.map */
