@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"(cd release; python -m SimpleHTTPServer) & grunt watch"
+    "dev": "(cd release; python -m SimpleHTTPServer) & grunt watch"
   },
   "repository": {
     "type": "git",
@@ -19,11 +19,19 @@
   "homepage": "https://github.com/zerdmann/zrdmn2016#readme",
   "devDependencies": {
     "breakpoint-sass": "^2.7.0",
+    "browser-sync": "^2.17.5",
+    "del": "^2.2.2",
     "grunt": "^1.0.1",
     "grunt-bake": "^1.7.2",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^1.2.0"
+    "grunt-sass": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-data": "^1.2.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2"
   },
   "dependencies": {
     "normalize.css": "^4.1.1"

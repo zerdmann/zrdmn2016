@@ -16,9 +16,13 @@ body {
 .inner_border {
 	position: fixed;
 	z-index:-1;
+	height: 95%;
 	height:95vh;
-	width:95vw;
-	margin: 2.5vh 2.5vw;
+	width: 95%;
+	width: 95vw;
+	width: calc(100% - 5vh);
+	max-width:100vw;
+	margin: 2.5vh 2.5vh;
 	pointer-events: none;
 	@include breakpoint($desktop)
 	{
@@ -35,11 +39,12 @@ body {
 
 		@include breakpoint($desktop)
 		{
-			max-width: 700px;
+			// max-width: 700px;
+			width: auto;
 			padding-top: 5vh;
 			position: absolute;
 			left:50%;
-			transform: translateX(-10rem)
+			transform: translateX(-50%)
 		}
 
 		&--title{
@@ -54,7 +59,7 @@ body {
 		margin-top: 1.5rem;
 		font-weight: normal;
 		@include breakpoint($desktop){
-			font-size: 5rem;
+			font-size: 9vw;
 		}
 	}
 
@@ -66,7 +71,7 @@ body {
 		margin-bottom: 3rem;
 		margin-bottom: 4.5vw;
 		@include breakpoint($desktop){
-			max-width: 21rem;
+			width: 37vw;
 			margin-bottom: 1rem;
 		}
 	}
@@ -136,6 +141,7 @@ body {
 		margin-left: 0;
 		bottom: 4rem;
 		margin-bottom: 0;
+		max-width: 400px;
 
 
 	}

@@ -1,0 +1,51 @@
+{"samples": [
+	{
+		"name" : "Tazo.com",
+		"img" : "",
+		"role": "Lead Developer, Dev Ops",
+		"type": "dev",
+		"tech-state":"React JS, Flux, Node, Express, Webpack"
+	},
+	{
+		"name" : "Pots Planters, and More",
+		"img" : "",
+		"role": "Freelance Front-End Developer",
+		"type": "dev",
+		"tech-state":"Shopify"
+	},
+	{
+		"name" : "Name.Kitchen",
+		"img" : "",
+		"role": "Whole Cloth",
+		"type": "dev",
+		"tech-state":"Node, Express, Squarespace Theme Development"
+	},
+	{
+		"name" : "Breakstones.com",
+		"img" : "",
+		"role": "Lead Developer",
+		"type": "dev",
+		"tech-state":"s3, Client-Side Routing, Handlebars, Grunt"
+	},
+	{
+		"name" : "Google Apps For Work Panorama Prototype",
+		"img" : "",
+		"role": "Designer, Developer, QA",
+		"type": "dev",
+		"tech-state":"GLSL, Three.JS, GSAP, Google App Engine"
+	},
+	{
+		"name" : "Tazo Chai",
+		"img" : "",
+		"role": "Developer, Maintainer",
+		"type": "dev",
+		"tech-state":"c# .NET, MySQL, Azure"
+	},
+	{
+		"name" : "Google Apps For Work Panels Landing Page",
+		"img" : "",
+		"role": "Designer, Developer, QA",
+		"type": "dev",
+		"tech-state":"YouTube JS API, GSAP, Google App Engine"
+	}
+]}
