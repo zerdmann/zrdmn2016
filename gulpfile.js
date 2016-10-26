@@ -19,35 +19,35 @@ function requireUncached(module){
 gulp.task('styles', function() {
     gulp.src('styles/main.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./release/'))
+        .pipe(gulp.dest('./docs/'))
         .pipe(reload({ stream:true }));
 });
 
 gulp.task('images', function() {
   return gulp.src('./img/**')
-      .pipe(newer('./release/img'))
+      .pipe(newer('./docs/img'))
       .pipe(imagemin())
-      .pipe(gulp.dest('./release/img'));
+      .pipe(gulp.dest('./docs/img'));
 
 });
 
 
 gulp.task('compile', function() {
-	del('./release/index.html')
+	del('./docs/index.html')
 	gulp.src('./base.html')
 	.pipe(data( function(file) {
 		return requireUncached('./work.json');
 	}))
 	.pipe(handlebars())
 	.pipe(rename('index.html'))
-	.pipe(gulp.dest('./release/'))
+	.pipe(gulp.dest('./docs/'))
 	.pipe(reload({ stream:true }));
 })
 
 gulp.task('serve', ['compile','styles'], function() {
   browserSync({
     server: {
-      baseDir: 'release'
+      baseDir: 'docs'
     }
   });
 
