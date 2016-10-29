@@ -6,14 +6,21 @@ var data = require('gulp-data');
 var handlebars = require('gulp-compile-handlebars');
 var del = require('del');
 var rename = require('gulp-rename');
+var newer = require('gulp-newer');
+var imagemin = require('gulp-imagemin')
 
 var handlebarsOpts = {
-	batch : ['./partials']
+	batch : ['./partials/']
 }
 
 function requireUncached(module){
     delete require.cache[require.resolve(module)]
     return require(module)
+}
+
+function log(data){
+  console.log(data);
+  return data;
 }
 
 gulp.task('styles', function() {
@@ -38,7 +45,7 @@ gulp.task('compile', function() {
 	.pipe(data( function(file) {
 		return requireUncached('./work.json');
 	}))
-	.pipe(handlebars())
+	.pipe(handlebars({},handlebarsOpts))
 	.pipe(rename('index.html'))
 	.pipe(gulp.dest('./docs/'))
 	.pipe(reload({ stream:true }));
@@ -52,5 +59,6 @@ gulp.task('serve', ['compile','styles'], function() {
   });
 
   gulp.watch('styles/**/*.scss', ['styles']);
-  gulp.watch(['./base.html','./partials/*.html', './work.json'], ['compile']);
+  gulp.watch('img/**/*', ['images']);
+  gulp.watch(['./base.html','./partials/*.handlebars', './work.json'], ['compile']);
 });
