@@ -7,7 +7,9 @@ var handlebars = require('gulp-compile-handlebars');
 var del = require('del');
 var rename = require('gulp-rename');
 var newer = require('gulp-newer');
-var imagemin = require('gulp-imagemin')
+var imagemin = require('gulp-imagemin');
+var babel = require('gulp-babel');
+var uglify = require('gulp-uglify');
 
 var handlebarsOpts = {
 	batch : ['./partials/']
@@ -34,10 +36,24 @@ gulp.task('images', function() {
   return gulp.src('./img/**')
       .pipe(newer('./docs/img'))
       .pipe(imagemin())
-      .pipe(gulp.dest('./docs/img'));
+      .pipe(gulp.dest('./docs/img'))
+      .pipe(reload({ stream:true }));;
 
 });
 
+gulp.task('js', function() {
+  gulp.src('./scripts/*.js')
+    .pipe(babel({presets: ['es2015']})).on('error', function(err) {
+      console.error('Error in babel task', err.toString());
+    })
+
+    .pipe(uglify()).on('error', function(err) {
+      console.error('Error in uglify task', err.toString());
+    })
+
+    .pipe(gulp.dest('./docs/scripts/'))
+    .pipe(reload({ stream:true }));
+});
 
 gulp.task('compile', function() {
 	del('./docs/index.html')
@@ -51,13 +67,14 @@ gulp.task('compile', function() {
 	.pipe(reload({ stream:true }));
 })
 
-gulp.task('serve', ['compile','styles'], function() {
+gulp.task('serve', ['compile','styles','js'], function() {
   browserSync({
     server: {
       baseDir: 'docs'
     }
   });
 
+  gulp.watch('./scripts/*.js', ['js'])
   gulp.watch('styles/**/*.scss', ['styles']);
   gulp.watch('img/**/*', ['images']);
   gulp.watch(['./base.html','./partials/*.handlebars', './work.json'], ['compile']);

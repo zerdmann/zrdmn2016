@@ -400,6 +400,10 @@ body {
   z-index: -2;
   max-height: 100vh; }
 
+.wrapper {
+  position: absolute;
+  width: 100vw; }
+
 .inner_border {
   position: fixed;
   z-index: -1;
@@ -421,11 +425,9 @@ body {
   margin-bottom: 6rem; }
   @media (min-width: 786px) {
     .header_box {
-      width: auto;
-      padding-top: 5vh;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%); } }
+      width: 40vw;
+      top: 5vh;
+      position: relative; } }
   .header_box--title {
     font-family: "sectra-super-italic";
     font-style: italic;
@@ -501,8 +503,9 @@ body {
   padding-bottom: 1rem; }
   @media (min-width: 786px) {
     .contact_box {
-      position: absolute;
+      position: relative;
       left: -10px;
+      top: 3vh;
       border: 5px solid #f4f4f4;
       margin-left: 0;
       bottom: 4rem;
@@ -570,3 +573,11 @@ body {
         width: 14rem;
         line-height: 3rem;
         letter-spacing: 3px; } }
+
+.work_box {
+  position: relative;
+  width: 100%; }
+
+.work {
+  position: relative;
+  left: 40%; }

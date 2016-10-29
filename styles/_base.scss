@@ -13,6 +13,11 @@ body {
 	max-height: 100vh;
 }
 
+.wrapper {
+	position: absolute;
+	width:100vw;
+}
+
 .inner_border {
 	position: fixed;
 	z-index:-1;
@@ -40,11 +45,11 @@ body {
 		@include breakpoint($desktop)
 		{
 			// max-width: 700px;
-			width: auto;
-			padding-top: 5vh;
-			position: absolute;
-			left:50%;
-			transform: translateX(-50%)
+			width: 40vw;
+			top:5vh;
+			position: relative;
+			// left:50%;
+			// transform: translateX(-50%)
 		}
 
 		&--title{
@@ -135,8 +140,9 @@ body {
 	padding-bottom: 1rem;
 	@include breakpoint($desktop)
 	{
-		position: absolute;
+		position: relative;
 		left:-10px;
+		top:3vh;
 		border: 5px solid $white;
 		margin-left: 0;
 		bottom: 4rem;
