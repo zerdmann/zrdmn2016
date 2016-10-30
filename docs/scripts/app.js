@@ -1,1 +1,1 @@
-"use strict";$(document).ready(function(c){console.log("in script!")});
+"use strict";$(document).ready(function(o){var n=$(".contact_box"),i=$(".contact_placeholder"),t=i.offset();$(window).resize(function(o){n.hasClass("fixed")||(t=i.offset())}),$(window).scroll(function(o){console.log(t,$(window).scrollTop()),t.top-$(window).scrollTop()<0?fix(n):unfix(n)})});var fix=function(o){o.hasClass("fixed")||(o.addClass("fixed"),o.children("a").text("Contact"))},unfix=function(o){o.hasClass("fixed")&&(o.removeClass("fixed"),o.children("a").text("Contact Him"))};

@@ -1,51 +1,42 @@
 {"samples": [
 	{
 		"name" : "Tazo.com",
+		"url":"http://www.tazo.com",
 		"img" : "",
 		"role": "Lead Developer, Dev Ops",
 		"type": "dev",
-		"tech-state":"React JS, Flux, Node, Express, Webpack"
+		"tech-state":"React JS, Flux, Node, Express, Webpack",
+		"collab":[{"name":"Sam Budd (Creative Director)", "url":"http://samanthabudd.com"}, {"name":"Brian Thiel (Front End)","url":"http://designedbybrian.com"}]
 	},
 	{
-		"name" : "Pots Planters, and More",
+		"name" : "Upshot Bold Ideas (Internal)",
 		"img" : "",
-		"role": "Freelance Front-End Developer",
+		"role": "Lead Developer, Co-Designer",
 		"type": "dev",
-		"tech-state":"Shopify"
+		"tech-state":"Node, Meteor JS, LDAP",
+		"collab":[{"name":"Brian Thiel (Front End)","url":"http://designedbybrian.com"}, {"name":"Adam Thorngren"}]
+
+
 	},
 	{
 		"name" : "Name.Kitchen",
 		"img" : "",
-		"role": "Whole Cloth",
+		"role": "Full-stack development",
 		"type": "dev",
 		"tech-state":"Node, Express, Squarespace Theme Development"
 	},
 	{
 		"name" : "Breakstones.com",
-		"img" : "",
+		"img" : "/img/breakstones.png",
 		"role": "Lead Developer",
 		"type": "dev",
 		"tech-state":"s3, Client-Side Routing, Handlebars, Grunt"
 	},
 	{
 		"name" : "Google Apps For Work Panorama Prototype",
-		"img" : "",
+		"img" : "/img/gafw.png",
 		"role": "Designer, Developer, QA",
 		"type": "dev",
 		"tech-state":"GLSL, Three.JS, GSAP, Google App Engine"
-	},
-	{
-		"name" : "Tazo Chai",
-		"img" : "",
-		"role": "Developer, Maintainer",
-		"type": "dev",
-		"tech-state":"c# .NET, MySQL, Azure"
-	},
-	{
-		"name" : "Google Apps For Work Panels Landing Page",
-		"img" : "",
-		"role": "Designer, Developer, QA",
-		"type": "dev",
-		"tech-state":"YouTube JS API, GSAP, Google App Engine"
 	}
 ]}
