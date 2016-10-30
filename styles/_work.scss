@@ -1,29 +1,36 @@
 .work_box {
 	position: relative;
-	width: 100%;
+	// width: 100%;
 	top:300px;
 	margin-bottom: 100px;
+	max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 .work {
 	position: relative;
-	left:20%;
+	// left:6%;
 	display: flex;
 	margin-bottom: 80px;
+	transition:left 0.2s ease-in-out;
+	@include breakpoint(1200px){
+		left:10%;
+	}
 
 	&--thumb{
 		position: relative;
-		width:200px;
-		height: 200px;
+		width:250px;
+		height: 250px;
 		display: inline-block;
 		border: 5px solid $grey;
 		background-size: cover;
 		> img {
 		}
 		&:before{
-			width:200px;
-			height:200px;
+			width:250px;
+			height:250px;
 			display: block;
 			content:'';
 			background:transparent;
@@ -98,7 +105,11 @@
 		font-size: 1.5rem;
 		font-style: italic;
 		color: $grey;
-					letter-spacing: 0.05em;				
+		letter-spacing: 0.05em;	
+		&.desc{
+			max-width: 480px;
+			margin-top: -0.5em;
+		}			
 		a {
 			color:$grey;
 		}
@@ -108,7 +119,7 @@
 			display: inline-block;
 			font-style: normal;
 			color:$white;
-			margin-right: 2em;
+			// margin-right: 1em;
 			width:100px;
 			letter-spacing: 0.1em;				
 

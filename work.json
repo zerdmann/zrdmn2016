@@ -4,39 +4,58 @@
 		"url":"http://www.tazo.com",
 		"img" : "",
 		"role": "Lead Developer, Dev Ops",
+		"desc":"A ground-up rebuild in a modern JS stack for new brand launch",
 		"type": "dev",
 		"tech-state":"React JS, Flux, Node, Express, Webpack",
-		"collab":[{"name":"Sam Budd (Creative Director)", "url":"http://samanthabudd.com"}, {"name":"Brian Thiel (Front End)","url":"http://designedbybrian.com"}]
+		"collab":[{"name":"Sam Budd (Designer)", "url":"http://samanthabudd.com"}, {"name":"Brian Thiel (Front End)","url":"http://designedbybrian.com"}]
 	},
 	{
-		"name" : "Upshot Bold Ideas (Internal)",
+		"name" : "Upshot Bold Ideas",
 		"img" : "",
 		"role": "Lead Developer, Co-Designer",
+		"desc":"An internal app for picking the best pitched ideas and awarding cash prizes 💸",
 		"type": "dev",
 		"tech-state":"Node, Meteor JS, LDAP",
-		"collab":[{"name":"Brian Thiel (Front End)","url":"http://designedbybrian.com"}, {"name":"Adam Thorngren"}]
-
+		"collab":[{"name":"Brian Thiel","url":"http://designedbybrian.com"}, {"name":"Adam Thorngren"}]
 
 	},
 	{
 		"name" : "Name.Kitchen",
 		"img" : "",
-		"role": "Full-stack development",
+		"role": "Lead Developer",
+		"desc":"platform migration from Wordpress to a custom Squarespace theme",
 		"type": "dev",
-		"tech-state":"Node, Express, Squarespace Theme Development"
+		"tech-state":"Node, Express, Squarespace Theme Development",
+		"collab":[{"name":"Athens Chen (Designer)", "url":"http://athenschen.com/"}]
 	},
 	{
 		"name" : "Breakstones.com",
+		"url":"http://breakstones.com",
 		"img" : "/img/breakstones.png",
 		"role": "Lead Developer",
+		"desc":"Single-page App style site on a static site budget",
 		"type": "dev",
-		"tech-state":"s3, Client-Side Routing, Handlebars, Grunt"
+		"tech-state":"s3 Web Hosting, Client-Side Routing, Handlebars, Grunt",
+		"collab":[{"name":"Alyssa Gauger (Designer)", "url":"http://www.alyssamgauger.com/"}]
+
 	},
 	{
 		"name" : "Google Apps For Work Panorama Prototype",
+		"url":"https://storage.googleapis.com/gafw-pano-ss-concept/4panel/index.html",
 		"img" : "/img/gafw.png",
-		"role": "Designer, Developer, QA",
+		"role": "Designer, Developer",
+		"desc":"Prototype \"stitched\" panorama with WebGL Barrel distortion and hotspot animations",
 		"type": "dev",
-		"tech-state":"GLSL, Three.JS, GSAP, Google App Engine"
+		"tech-state":"GLSL, Three.JS, GSAP, Google App Engine",
+		"collab":[{"name":"Darren Angle", "url":"http://darrenangle.com"}]
+	},
+		{
+		"name" : "Between Yesterday and Tomorrow",
+		"img" : "",
+		"role": "Co-Writer, Producer",
+		"desc":"A family disintegration Sirk melodrama infused with the paranoia of Philip K Dick",
+		"type": "film",
+		"tech-state":"Pre-Production, Shooting 2017",
+		"collab":[{"name":"Johnathon Olsen (Co-Writer, Director)", "url":"https://vimeo.com/selfdestructive"}, {"name":"Kurt Raether (Producer)","url":"http://kurtraether.com/"}]
 	}
 ]}

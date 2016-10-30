@@ -98,6 +98,7 @@ body {
 
 	&--link {
 		display: inline-block;
+		cursor: pointer;
 		min-width: 3rem;
 		min-height: 3rem;
 		max-width: 64px;
@@ -134,7 +135,7 @@ body {
 		position: relative;
 		width:100%;
 		left:-10px;
-		top:3vh;
+		top:100px;
 		bottom: 4rem;
 		margin-bottom: 0;
 
@@ -160,7 +161,7 @@ body {
 
 		position: absolute;
 		// left:-10px;
-		top:2vh;
+		// top:2vh;
 		border: 5px solid $white;
 		margin-left: 0;
 		bottom: 4rem;
@@ -259,7 +260,7 @@ body {
 			// min-width: auto;
 			width: auto;
 			padding:0;
-			z-index: 1;
+			z-index: 2;
 			& > .contact_box--button {			
 				background-image:none;
 				background-color: $white;

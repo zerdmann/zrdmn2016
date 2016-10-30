@@ -1,9 +1,10 @@
 <div class="work">
 <div class="work--thumb" style="background-image: url({{'img'}})"></div>
 <div class="work--copy"><h2 class="work--header">{{#if url}}<a href="{{url}}">{{name}}</a> {{else}} {{name}} {{/if}}</h2>
-<p class="work--detail"><span>role</span>{{role}}</p>
+{{#if desc}}<p class="work--detail desc">{{desc}}</p>{{/if}}
+{{!-- <p class="work--detail"><span>role</span>{{role}}</p> --}}
 <p class="work--detail"><span>{{#if (isDev type)}}tech{{else}}state{{/if}}</span>{{tech-state}}</p>
-{{#if collab}}<p class="work--detail"><span>team</span>{{#each collab}}{{#if url}}<a href="{{url}}">{{name}}</a> {{else}} {{name}} {{/if}}{{/each}}</p>{{/if}}
+{{#if collab}}<p class="work--detail"><span>team</span>{{#each collab}}{{#if url}}<a target="_blank" href="{{url}}">{{name}}</a> {{else}} {{name}} {{/if}}{{/each}}</p>{{/if}}
 
 </div>
 
