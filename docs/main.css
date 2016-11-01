@@ -412,7 +412,7 @@ body {
 
 .inner_border {
   position: fixed;
-  z-index: -1;
+  z-index: 1;
   height: 95%;
   height: 95vh;
   width: 95%;
@@ -428,7 +428,8 @@ body {
 .header_box {
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  z-index: 2; }
   @media (min-width: 786px) {
     .header_box {
       width: 40vw;
@@ -519,7 +520,8 @@ body {
   max-width: 500px;
   padding-left: 2rem;
   padding-top: 1rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  z-index: 2; }
   @media (min-width: 786px) {
     .contact_box {
       min-height: 12rem;
@@ -600,8 +602,7 @@ body {
       border-color: transparent;
       min-height: auto;
       width: auto;
-      padding: 0;
-      z-index: 2; }
+      padding: 0; }
       .contact_box.fixed > .contact_box--button {
         background-image: none;
         background-color: #f4f4f4;
@@ -636,7 +637,8 @@ body {
     height: 250px;
     display: inline-block;
     border: 5px solid #303030;
-    background-size: cover; }
+    background-size: cover;
+    background-color: #f4f4f4; }
     .work--thumb:before {
       width: 250px;
       height: 250px;
@@ -661,7 +663,10 @@ body {
       background-image: url("/img/file_70px.png");
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: contain; }
+      background-size: contain;
+      visibility: hidden; }
+    .work--thumb:hover:after {
+      visibility: visible; }
   .work--copy {
     margin-left: 50px; }
   .work--header {
@@ -694,6 +699,8 @@ body {
         background-size: contain;
         bottom: 0.2em; }
   .work--detail {
+    display: flex;
+    justify-content: flex-start;
     font-family: "pressura-regular";
     font-weight: 100;
     text-transform: uppercase;
@@ -706,9 +713,10 @@ body {
       margin-top: -0.5em; }
     .work--detail a {
       color: #303030; }
-    .work--detail > span {
+    .work--detail > span.name {
       display: inline-block;
       font-style: normal;
       color: #f4f4f4;
-      width: 100px;
+      width: 60px;
+      margin-right: 1em;
       letter-spacing: 0.1em; }

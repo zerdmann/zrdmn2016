@@ -26,6 +26,7 @@
 		display: inline-block;
 		border: 5px solid $grey;
 		background-size: cover;
+		background-color: $white;
 		> img {
 		}
 		&:before{
@@ -54,7 +55,12 @@
 			background-repeat:no-repeat;
 			background-position: center center;
 			background-size: contain;
+			visibility: hidden;
 
+		}
+
+		&:hover:after{
+			visibility: visible;
 		}
 	}
 
@@ -93,12 +99,15 @@
 				background-repeat: no-repeat;
 				background-size: contain;
 				bottom:0.2em;
+
 			}
 		}
 
 	}
 
 	&--detail {
+		display: flex;
+		justify-content:flex-start;
 		font-family: "pressura-regular";
 		font-weight: 100;
 		text-transform: uppercase;
@@ -115,14 +124,18 @@
 		}
 
 
-		& > span {
+		& > span.name {
 			display: inline-block;
 			font-style: normal;
 			color:$white;
-			// margin-right: 1em;
-			width:100px;
+    width: 60px;
+    margin-right: 1em;
 			letter-spacing: 0.1em;				
 
+		}
+
+		& span.collab, a.collab {
+			// white-space: nowrap;
 		}
 	}
 }

@@ -3,8 +3,8 @@
 <div class="work--copy"><h2 class="work--header">{{#if url}}<a href="{{url}}">{{name}}</a> {{else}} {{name}} {{/if}}</h2>
 {{#if desc}}<p class="work--detail desc">{{desc}}</p>{{/if}}
 {{!-- <p class="work--detail"><span>role</span>{{role}}</p> --}}
-<p class="work--detail"><span>{{#if (isDev type)}}tech{{else}}state{{/if}}</span>{{tech-state}}</p>
-{{#if collab}}<p class="work--detail"><span>team</span>{{#each collab}}{{#if url}}<a target="_blank" href="{{url}}">{{name}}</a> {{else}} {{name}} {{/if}}{{/each}}</p>{{/if}}
+<p class="work--detail"><span class="name">{{#if (isDev type)}}tech{{else}}state{{/if}}</span><span class="content">{{tech-state}}</span></p>
+{{#if collab}}<p class="work--detail"><span class="name">team</span><span class="content">{{#each collab}}{{#if url}}<a target="_blank" href="{{url}}" class="collab">{{name}}</a> {{else}} <span class="collab">{{name}}</span> {{/if}}{{/each}}<span></p>{{/if}}
 
 </div>
 

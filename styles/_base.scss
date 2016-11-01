@@ -19,7 +19,7 @@ body {
 
 .inner_border {
 	position: fixed;
-	z-index:-1;
+	z-index:1;
 	height: 95%;
 	height:95vh;
 	width: 95%;
@@ -40,6 +40,7 @@ body {
 		width: 90%;
 		margin: 0 auto;
 		margin-bottom: 6rem;
+		z-index: 2;
 
 		@include breakpoint($desktop)
 		{
@@ -155,6 +156,7 @@ body {
 	padding-left:2rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	z-index: 2;
 	@include breakpoint($desktop)
 	{
 			min-height: 12rem;
@@ -260,7 +262,6 @@ body {
 			// min-width: auto;
 			width: auto;
 			padding:0;
-			z-index: 2;
 			& > .contact_box--button {			
 				background-image:none;
 				background-color: $white;

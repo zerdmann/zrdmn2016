@@ -2,45 +2,45 @@
 	{
 		"name" : "Tazo.com",
 		"url":"http://www.tazo.com",
-		"img" : "",
+		"img" : "/img/tazo.gif",
 		"role": "Lead Developer, Dev Ops",
 		"desc":"A ground-up rebuild in a modern JS stack for new brand launch",
 		"type": "dev",
 		"tech-state":"React JS, Flux, Node, Express, Webpack",
-		"collab":[{"name":"Sam Budd (Designer)", "url":"http://samanthabudd.com"}, {"name":"Brian Thiel (Front End)","url":"http://designedbybrian.com"}]
+		"collab":[{"name":"Sam Budd", "url":"http://samanthabudd.com"}, {"name":"Brian Thiel","url":"http://designedbybrian.com"}, {"name":"Alex Coven", "url":"http://www.alexcoven.com/"}]
 	},
 	{
 		"name" : "Upshot Bold Ideas",
-		"img" : "",
+		"img" : "/img/bold.gif",
 		"role": "Lead Developer, Co-Designer",
-		"desc":"An internal app for picking the best pitched ideas and awarding cash prizes 💸",
+		"desc":"An internal app for voting on the best agency ideas and awarding cash prizes",
 		"type": "dev",
 		"tech-state":"Node, Meteor JS, LDAP",
-		"collab":[{"name":"Brian Thiel","url":"http://designedbybrian.com"}, {"name":"Adam Thorngren"}]
+		"collab":[{"name":"Brian Thiel","url":"http://designedbybrian.com"}]
 
 	},
 	{
 		"name" : "Name.Kitchen",
-		"img" : "",
+		"img" : "/img/name.gif",
 		"role": "Lead Developer",
 		"desc":"platform migration from Wordpress to a custom Squarespace theme",
 		"type": "dev",
 		"tech-state":"Node, Express, Squarespace Theme Development",
-		"collab":[{"name":"Athens Chen (Designer)", "url":"http://athenschen.com/"}]
+		"collab":[{"name":"Athens Chen", "url":"http://athenschen.com/"}]
 	},
 	{
 		"name" : "Breakstones.com",
 		"url":"http://breakstones.com",
-		"img" : "/img/breakstones.png",
+		"img" : "/img/bstones.gif",
 		"role": "Lead Developer",
-		"desc":"Single-page App style site on a static site budget",
+		"desc":"Web-App style site on a static site budget",
 		"type": "dev",
 		"tech-state":"s3 Web Hosting, Client-Side Routing, Handlebars, Grunt",
-		"collab":[{"name":"Alyssa Gauger (Designer)", "url":"http://www.alyssamgauger.com/"}]
+		"collab":[{"name":"Alyssa Gauger", "url":"http://www.alyssamgauger.com/"}]
 
 	},
 	{
-		"name" : "Google Apps For Work Panorama Prototype",
+		"name" : "GAFW Panorama Prototype",
 		"url":"https://storage.googleapis.com/gafw-pano-ss-concept/4panel/index.html",
 		"img" : "/img/gafw.png",
 		"role": "Designer, Developer",
@@ -51,11 +51,21 @@
 	},
 		{
 		"name" : "Between Yesterday and Tomorrow",
-		"img" : "",
+		"img" : "/img/ruby.png",
 		"role": "Co-Writer, Producer",
-		"desc":"A family disintegration Sirk melodrama infused with the paranoia of Philip K Dick",
+		"desc":"A lush Sirk melodrama infused with the paranoia of Philip K Dick",
 		"type": "film",
 		"tech-state":"Pre-Production, Shooting 2017",
-		"collab":[{"name":"Johnathon Olsen (Co-Writer, Director)", "url":"https://vimeo.com/selfdestructive"}, {"name":"Kurt Raether (Producer)","url":"http://kurtraether.com/"}]
+		"collab":[{"name":"Johnathon Olsen", "url":"https://vimeo.com/selfdestructive"}, {"name":"Kurt Raether","url":"http://kurtraether.com/"}]
+	},
+	{
+		"name" : "The Kingdom of Ends",
+		"url":"https://vimeo.com/77915082",
+		"img" : "/img/koe.jpg",
+		"role": "Co-Writer",
+		"desc":"A study of the politically motivated murders by abolitionist John Brown ",
+		"type": "film",
+		"tech-state":"on hold, screenplay finished",
+		"collab":[{"name":"Johnathon Olsen", "url":"https://vimeo.com/selfdestructive"}]
 	}
 ]}
