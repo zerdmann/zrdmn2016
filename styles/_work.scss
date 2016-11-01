@@ -1,34 +1,53 @@
 .work_box {
 	position: relative;
 	// width: 100%;
-	top:300px;
+	top:10vw;
 	margin-bottom: 100px;
-	max-width: 90%;
+	width: 85%;
+	max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    @include breakpoint($desktop){
+		top:300px;
+			width: 90%;
 
+	}
 }
 
 .work {
 	position: relative;
 	// left:6%;
 	display: flex;
+	align-items:center;
+	flex-direction:column;
 	margin-bottom: 80px;
 	transition:left 0.2s ease-in-out;
-	@include breakpoint(1200px){
+	@include breakpoint(600px) {
+	    	flex-direction:row;
+	    	align-items:flex-start;
+
+	}
+	@include breakpoint(1200px) {
 		left:10%;
 	}
 
 	&--thumb{
-		position: relative;
 		width:250px;
 		height: 250px;
+		// margin-left: 50px;
 		display: inline-block;
 		border: 5px solid $grey;
 		background-size: cover;
 		background-color: $white;
-		> img {
+		margin-left: 15px;
+		margin-bottom: 2rem;
+		@include breakpoint($desktop) {
+			position: relative;
+			margin-left: 0;
+			margin-bottom: auto;
+
 		}
+
 		&:before{
 			width:250px;
 			height:250px;
@@ -58,14 +77,18 @@
 			visibility: hidden;
 
 		}
-
+	@include breakpoint($desktop) {
 		&:hover:after{
 			visibility: visible;
+		}
 		}
 	}
 
 	&--copy{
-		margin-left: 50px;
+	
+		@include breakpoint(600px){
+				margin-left: 50px;
+		}
 	}
 
 	&--header {
@@ -79,7 +102,7 @@
 		text-transform: uppercase;
 		// letter-spacing: 2px;
 		letter-spacing: 0.1em;				
-		@include breakpoint($desktop){
+		@include breakpoint(600px){
 			font-size: 1.5rem;
 		}
 		& > a {
@@ -90,7 +113,7 @@
 				height: 1em;
 				width:1em;
 				content:'';
-				display: inline-block;
+				display: none;
 				position: absolute;
 				// top:-1.1em;
 				right:-1.23em;
@@ -99,6 +122,9 @@
 				background-repeat: no-repeat;
 				background-size: contain;
 				bottom:0.2em;
+				@include breakpoint(1080px){
+						display: inline-block;
+				}
 
 			}
 		}
@@ -111,10 +137,13 @@
 		font-family: "pressura-regular";
 		font-weight: 100;
 		text-transform: uppercase;
-		font-size: 1.5rem;
+		font-size: 5.5vw;
 		font-style: italic;
 		color: $grey;
 		letter-spacing: 0.05em;	
+		@include breakpoint(600px){
+			font-size: 1.5rem;
+		}
 		&.desc{
 			max-width: 480px;
 			margin-top: -0.5em;

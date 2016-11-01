@@ -617,28 +617,45 @@ body {
 
 .work_box {
   position: relative;
-  top: 300px;
+  top: 10vw;
   margin-bottom: 100px;
-  max-width: 90%;
+  width: 85%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
+  @media (min-width: 786px) {
+    .work_box {
+      top: 300px;
+      width: 90%; } }
 
 .work {
   position: relative;
   display: flex;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 80px;
   transition: left 0.2s ease-in-out; }
+  @media (min-width: 600px) {
+    .work {
+      flex-direction: row;
+      align-items: flex-start; } }
   @media (min-width: 1200px) {
     .work {
       left: 10%; } }
   .work--thumb {
-    position: relative;
     width: 250px;
     height: 250px;
     display: inline-block;
     border: 5px solid #303030;
     background-size: cover;
-    background-color: #f4f4f4; }
+    background-color: #f4f4f4;
+    margin-left: 15px;
+    margin-bottom: 2rem; }
+    @media (min-width: 786px) {
+      .work--thumb {
+        position: relative;
+        margin-left: 0;
+        margin-bottom: auto; } }
     .work--thumb:before {
       width: 250px;
       height: 250px;
@@ -665,10 +682,12 @@ body {
       background-position: center center;
       background-size: contain;
       visibility: hidden; }
-    .work--thumb:hover:after {
-      visibility: visible; }
-  .work--copy {
-    margin-left: 50px; }
+    @media (min-width: 786px) {
+      .work--thumb:hover:after {
+        visibility: visible; } }
+  @media (min-width: 600px) {
+    .work--copy {
+      margin-left: 50px; } }
   .work--header {
     margin-top: 0;
     font-family: "pressura-regular";
@@ -679,7 +698,7 @@ body {
     font-size: 5.5vw;
     text-transform: uppercase;
     letter-spacing: 0.1em; }
-    @media (min-width: 786px) {
+    @media (min-width: 600px) {
       .work--header {
         font-size: 1.5rem; } }
     .work--header > a {
@@ -690,7 +709,7 @@ body {
         height: 1em;
         width: 1em;
         content: '';
-        display: inline-block;
+        display: none;
         position: absolute;
         right: -1.23em;
         background-image: url("/img/link_64.png");
@@ -698,16 +717,22 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
         bottom: 0.2em; }
+        @media (min-width: 1080px) {
+          .work--header > a:after {
+            display: inline-block; } }
   .work--detail {
     display: flex;
     justify-content: flex-start;
     font-family: "pressura-regular";
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 5.5vw;
     font-style: italic;
     color: #303030;
     letter-spacing: 0.05em; }
+    @media (min-width: 600px) {
+      .work--detail {
+        font-size: 1.5rem; } }
     .work--detail.desc {
       max-width: 480px;
       margin-top: -0.5em; }

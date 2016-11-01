@@ -42,7 +42,7 @@
 	{
 		"name" : "GAFW Panorama Prototype",
 		"url":"https://storage.googleapis.com/gafw-pano-ss-concept/4panel/index.html",
-		"img" : "/img/gafw.png",
+		"img" : "/img/gafw.gif",
 		"role": "Designer, Developer",
 		"desc":"Prototype \"stitched\" panorama with WebGL Barrel distortion and hotspot animations",
 		"type": "dev",
