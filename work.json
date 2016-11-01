@@ -2,7 +2,8 @@
 	{
 		"name" : "Tazo.com",
 		"url":"http://www.tazo.com",
-		"img" : "/img/tazo.gif",
+		"img" : "/img/tazo",
+		"gif":true,
 		"role": "Lead Developer, Dev Ops",
 		"desc":"A ground-up rebuild in a modern JS stack for new brand launch",
 		"type": "dev",
@@ -11,7 +12,7 @@
 	},
 	{
 		"name" : "Upshot Bold Ideas",
-		"img" : "/img/bold.gif",
+		"img" : "/img/bold",
 		"role": "Lead Developer, Co-Designer",
 		"desc":"An internal app for voting on the best agency ideas and awarding cash prizes",
 		"type": "dev",
@@ -21,7 +22,7 @@
 	},
 	{
 		"name" : "Name.Kitchen",
-		"img" : "/img/name.gif",
+		"img" : "/img/name",
 		"role": "Lead Developer",
 		"desc":"platform migration from Wordpress to a custom Squarespace theme",
 		"type": "dev",
@@ -31,7 +32,7 @@
 	{
 		"name" : "Breakstones.com",
 		"url":"http://breakstones.com",
-		"img" : "/img/bstones.gif",
+		"img" : "/img/bstones",
 		"role": "Lead Developer",
 		"desc":"Web-App style site on a static site budget",
 		"type": "dev",
@@ -42,7 +43,7 @@
 	{
 		"name" : "GAFW Panorama Prototype",
 		"url":"https://storage.googleapis.com/gafw-pano-ss-concept/4panel/index.html",
-		"img" : "/img/gafw.gif",
+		"img" : "/img/gafw",
 		"role": "Designer, Developer",
 		"desc":"Prototype \"stitched\" panorama with WebGL Barrel distortion and hotspot animations",
 		"type": "dev",
@@ -51,7 +52,7 @@
 	},
 		{
 		"name" : "Between Yesterday and Tomorrow",
-		"img" : "/img/ruby.png",
+		"img" : "/img/ruby",
 		"role": "Co-Writer, Producer",
 		"desc":"A lush Sirk melodrama infused with the paranoia of Philip K Dick",
 		"type": "film",
@@ -61,7 +62,7 @@
 	{
 		"name" : "The Kingdom of Ends",
 		"url":"https://vimeo.com/77915082",
-		"img" : "/img/koe.jpg",
+		"img" : "/img/koe",
 		"role": "Co-Writer",
 		"desc":"A study of the politically motivated murders by abolitionist John Brown ",
 		"type": "film",

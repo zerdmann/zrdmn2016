@@ -7,12 +7,21 @@ $(document).ready( e => {
 			cPos = $cPlaceholder.offset()
 	})
 	$(window).scroll( e => {
-		console.log(cPos, $(window).scrollTop() )
+		// console.log(cPos, $(window).scrollTop() )
 		if( (cPos.top - $(window).scrollTop()) < 0 )
 			 fix($contact)
 		else
 			unfix($contact)
 	})
+
+	if(window.matchMedia("(min-width: 1080px) and (orientation:landscape)").matches)
+	{
+		$('.work--thumb').each( (idx, thumb) => {
+			let $t = $(thumb)
+			if ($t.data('gif'))
+				$t.css('background-image',"url("+$t.data('gif')+")")
+		})
+	}
 })
 
 let fix = ($t) => {

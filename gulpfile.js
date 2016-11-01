@@ -11,6 +11,8 @@ var imagemin = require('gulp-imagemin');
 var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
+var autoprefixer = require('gulp-autoprefixer');
+
 
 
 var handlebarsOpts = {
@@ -36,6 +38,7 @@ gulp.task('styles', function(cb) {
   pump([
      gulp.src('styles/main.scss'),
      sass(),
+     autoprefixer(),
      gulp.dest('./docs/'),
      reload({ stream:true })
     ], cb);

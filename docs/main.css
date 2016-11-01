@@ -397,6 +397,22 @@ textarea {
 * {
   box-sizing: border-box; }
 
+::-moz-selection {
+  background: #f89176; }
+
+::selection {
+  background: #f89176; }
+
+h1::-moz-selection, br::-moz-selection {
+  text-shadow: 0.05em 0px 0px #f5572d;
+  background: transparent;
+  color: #f4f4f4; }
+
+h1::selection, br::selection {
+  text-shadow: 0.05em 0px 0px #f5572d;
+  background: transparent;
+  color: #f4f4f4; }
+
 html {
   font-size: 16px; }
 
@@ -573,8 +589,10 @@ body {
     line-height: 1.5em;
     height: 1.5em;
     outline: none;
+    -webkit-transition: background-color 0.5s ease;
     transition: background-color 0.5s ease;
     background: #f77e5e;
+    background-image: -webkit-radial-gradient(#303030 20%, transparent 0), -webkit-radial-gradient(#303030 20%, transparent 0);
     background-image: radial-gradient(#303030 20%, transparent 0), radial-gradient(#303030 20%, transparent 0);
     background-size: 2vmin 2vmin;
     background-position: 0 0, 1vmin 1vmin; }
@@ -585,6 +603,7 @@ body {
         display: block;
         font-size: 1.5rem;
         background: transparent;
+        background-image: -webkit-radial-gradient(#303030 1px, transparent 0), -webkit-radial-gradient(#303030 1px, transparent 0);
         background-image: radial-gradient(#303030 1px, transparent 0), radial-gradient(#303030 1px, transparent 0);
         background-size: 6px 6px;
         background-position: 0 0, 3px 3px;
@@ -630,15 +649,28 @@ body {
 
 .work {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 80px;
+  -webkit-transition: left 0.2s ease-in-out;
   transition: left 0.2s ease-in-out; }
   @media (min-width: 600px) {
     .work {
-      flex-direction: row;
-      align-items: flex-start; } }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
   @media (min-width: 1200px) {
     .work {
       left: 10%; } }
@@ -721,8 +753,12 @@ body {
           .work--header > a:after {
             display: inline-block; } }
   .work--detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     font-family: "pressura-regular";
     font-weight: 100;
     text-transform: uppercase;

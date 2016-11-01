@@ -2,6 +2,17 @@
 	 box-sizing: border-box;
 }
 
+::selection {
+    background: lighten($pink, 5%);
+}
+
+h1::selection, br::selection {
+	// stext-shadow: darken($pink, 5%) 0 0 0.1em;
+	text-shadow: 0.05em 0px 0px darken($pink, 10%);
+	background: transparent;
+	color:$white;
+}
+
 html {
 	font-size:16px;
 }
