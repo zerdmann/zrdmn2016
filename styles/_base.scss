@@ -2,10 +2,20 @@
 	 box-sizing: border-box;
 }
 
+::selection {
+    background: lighten($pink, 5%);
+}
+
+h1::selection, br::selection {
+	// stext-shadow: darken($pink, 5%) 0 0 0.1em;
+	text-shadow: 0.05em 0px 0px darken($pink, 10%);
+	background: transparent;
+	color:$white;
+}
+
 html {
 	font-size:16px;
 }
-
 body {
 	background-color: $pink;
 	overflow-x: hidden;
@@ -13,9 +23,14 @@ body {
 	max-height: 100vh;
 }
 
+.wrapper {
+	position: absolute;
+	width:100vw;
+}
+
 .inner_border {
 	position: fixed;
-	z-index:-1;
+	z-index:1;
 	height: 95%;
 	height:95vh;
 	width: 95%;
@@ -36,15 +51,16 @@ body {
 		width: 90%;
 		margin: 0 auto;
 		margin-bottom: 6rem;
+		z-index: 2;
 
 		@include breakpoint($desktop)
 		{
 			// max-width: 700px;
-			width: auto;
-			padding-top: 5vh;
-			position: absolute;
-			left:50%;
-			transform: translateX(-50%)
+			width: 40vw;
+			top:5vh;
+			position: relative;
+			// left:50%;
+			// transform: translateX(-50%)
 		}
 
 		&--title{
@@ -94,6 +110,7 @@ body {
 
 	&--link {
 		display: inline-block;
+		cursor: pointer;
 		min-width: 3rem;
 		min-height: 3rem;
 		max-width: 64px;
@@ -121,22 +138,43 @@ body {
 	}
 }
 
+.contact_placeholder{
+	display: block;
+	margin-right: auto;
+	min-height: 11rem;
+	@include breakpoint($desktop)
+	{
+		position: relative;
+		width:100%;
+		left:-10px;
+		top:100px;
+		bottom: 4rem;
+		margin-bottom: 0;
+
+
+	}
+}
+
 .contact_box {
 	display: block;
 	width: 90%;
 	margin-left: 5%;
 	margin-right: auto;
-	min-height: 9rem;
+	// min-height: 12rem;
 	margin-bottom: 3rem;
 	border: 3px solid $white;
 	max-width: 500px;
 	padding-left:2rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	z-index: 2;
 	@include breakpoint($desktop)
 	{
+			min-height: 12rem;
+
 		position: absolute;
-		left:-10px;
+		// left:-10px;
+		// top:2vh;
 		border: 5px solid $white;
 		margin-left: 0;
 		bottom: 4rem;
@@ -220,6 +258,35 @@ body {
 		    		letter-spacing: 3px;
 
 
+		}
+	}
+
+	&.fixed{
+		@include breakpoint($desktop)
+		{
+			position: fixed;
+			top: 2.5vh;
+			left: 2.5vh;
+			bottom: auto;
+			border-color: transparent;
+			min-height: auto;
+			// min-width: auto;
+			width: auto;
+			padding:0;
+			& > .contact_box--button {			
+				background-image:none;
+				background-color: $white;
+				color:$grey;
+				margin:0;
+				text-align: center;
+				&:hover {
+					background: $grey;
+					color:$white;
+				}
+			}
+			& > .contact_box--subhead{
+				display: none;
+			}
 		}
 	}
 }

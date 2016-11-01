@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Zach Works</title>
+	<title>Zach Erdmann</title>
 	<link rel="stylesheet" type="text/css" href="/main.css">
 	<meta name="viewport" content="initial-scale=1">
 </head>
 <body>
 	<div class="inner_border"></div>
-		<div class="header_box">
+		<div class=wrapper><div class="header_box">
 			<h1 class="header_box--title">Zach<br>Erdmann</h1>
 			<div class="header_box--underline"></div>
-			<h2 class="header_box--subhead">Digital Developer and Strategist</h2>
+			<h2 class="header_box--subhead">Developer&nbsp;and&nbsp;Digital&nbsp;Strategist</h2>
 			<h2 class="header_box--subhead">Screenwriter</h2>
 			<a href="https://github.com/zerdmann" class="header_box--link github"></a>
 			<a href="https://twitter.com/zerdmann" class="header_box--link twitter"></a>
 		</div>
-
+		<div class="contact_placeholder">
 		<div class="contact_box">
 			<h2 class="contact_box--subhead">Zach is available for<br/>freelance work</h2>
 			<a href="mailto:freelance@zach.works" class="contact_box--button">Contact Him</a>
 
 		</div>
 
-		{{!--<div class='work_box'>
-			 {{#each samples}}
-			<span>{{name}}</span>
+		</div>
+		<div class='work_box'>
+			{{#each samples}}
+				{{> workblock this}}
 			{{/each}}
-		</div> --}}
+		</div>
+		</div>
 </body>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+  crossorigin="anonymous"></script>
+  <script src="/scripts/app.js" async></script>
 </html>

@@ -1,51 +1,72 @@
 {"samples": [
 	{
 		"name" : "Tazo.com",
-		"img" : "",
+		"url":"http://www.tazo.com",
+		"img" : "/img/tazo",
+		"gif":true,
 		"role": "Lead Developer, Dev Ops",
+		"desc":"A ground-up rebuild in a modern JS stack for new brand launch",
 		"type": "dev",
-		"tech-state":"React JS, Flux, Node, Express, Webpack"
+		"tech-state":"React JS, Flux, Node, Express, Webpack",
+		"collab":[{"name":"Sam Budd", "url":"http://samanthabudd.com"}, {"name":"Brian Thiel","url":"http://designedbybrian.com"}, {"name":"Alex Coven", "url":"http://www.alexcoven.com/"}]
 	},
 	{
-		"name" : "Pots Planters, and More",
-		"img" : "",
-		"role": "Freelance Front-End Developer",
+		"name" : "Upshot Bold Ideas",
+		"img" : "/img/bold",
+		"role": "Lead Developer, Co-Designer",
+		"desc":"An internal app for voting on the best agency ideas and awarding cash prizes",
 		"type": "dev",
-		"tech-state":"Shopify"
+		"tech-state":"Node, Meteor JS, LDAP",
+		"collab":[{"name":"Brian Thiel","url":"http://designedbybrian.com"}]
+
 	},
 	{
 		"name" : "Name.Kitchen",
-		"img" : "",
-		"role": "Whole Cloth",
+		"img" : "/img/name",
+		"role": "Lead Developer",
+		"desc":"platform migration from Wordpress to a custom Squarespace theme",
 		"type": "dev",
-		"tech-state":"Node, Express, Squarespace Theme Development"
+		"tech-state":"Node, Express, Squarespace Theme Development",
+		"collab":[{"name":"Athens Chen", "url":"http://athenschen.com/"}]
 	},
 	{
 		"name" : "Breakstones.com",
-		"img" : "",
+		"url":"http://breakstones.com",
+		"img" : "/img/bstones",
 		"role": "Lead Developer",
+		"desc":"Web-App style site on a static site budget",
 		"type": "dev",
-		"tech-state":"s3, Client-Side Routing, Handlebars, Grunt"
+		"tech-state":"s3 Web Hosting, Client-Side Routing, Handlebars, Grunt",
+		"collab":[{"name":"Alyssa Gauger", "url":"http://www.alyssamgauger.com/"}]
+
 	},
 	{
-		"name" : "Google Apps For Work Panorama Prototype",
-		"img" : "",
-		"role": "Designer, Developer, QA",
+		"name" : "GAFW Panorama Prototype",
+		"url":"https://storage.googleapis.com/gafw-pano-ss-concept/4panel/index.html",
+		"img" : "/img/gafw",
+		"role": "Designer, Developer",
+		"desc":"Prototype \"stitched\" panorama with WebGL Barrel distortion and hotspot animations",
 		"type": "dev",
-		"tech-state":"GLSL, Three.JS, GSAP, Google App Engine"
+		"tech-state":"GLSL, Three.JS, GSAP, Google App Engine",
+		"collab":[{"name":"Darren Angle", "url":"http://darrenangle.com"}]
+	},
+		{
+		"name" : "Between Yesterday and Tomorrow",
+		"img" : "/img/ruby",
+		"role": "Co-Writer, Producer",
+		"desc":"A lush Sirk melodrama infused with the paranoia of Philip K Dick",
+		"type": "film",
+		"tech-state":"Pre-Production, Shooting 2017",
+		"collab":[{"name":"Johnathon Olsen", "url":"https://vimeo.com/selfdestructive"}, {"name":"Kurt Raether","url":"http://kurtraether.com/"}]
 	},
 	{
-		"name" : "Tazo Chai",
-		"img" : "",
-		"role": "Developer, Maintainer",
-		"type": "dev",
-		"tech-state":"c# .NET, MySQL, Azure"
-	},
-	{
-		"name" : "Google Apps For Work Panels Landing Page",
-		"img" : "",
-		"role": "Designer, Developer, QA",
-		"type": "dev",
-		"tech-state":"YouTube JS API, GSAP, Google App Engine"
+		"name" : "The Kingdom of Ends",
+		"url":"https://vimeo.com/77915082",
+		"img" : "/img/koe",
+		"role": "Co-Writer",
+		"desc":"A study of the politically motivated murders by abolitionist John Brown ",
+		"type": "film",
+		"tech-state":"on hold, screenplay finished",
+		"collab":[{"name":"Johnathon Olsen", "url":"https://vimeo.com/selfdestructive"}]
 	}
 ]}

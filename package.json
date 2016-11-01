@@ -4,7 +4,7 @@
   "description": "rebuild homepage summer 2016",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/zerdmann/zrdmn2016#readme",
   "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
     "breakpoint-sass": "^2.7.0",
     "browser-sync": "^2.17.5",
     "del": "^2.2.2",
@@ -26,11 +27,16 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^1.2.0",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-data": "^1.2.1",
     "gulp-imagemin": "^3.0.3",
+    "gulp-newer": "^1.3.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1"
   },
   "dependencies": {
     "normalize.css": "^4.1.1"
