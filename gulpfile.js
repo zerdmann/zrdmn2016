@@ -29,10 +29,6 @@ function requireUncached(module){
     return require(module)
 }
 
-function log(data){
-  console.log(data);
-  return data;
-}
 
 gulp.task('styles', function(cb) {
   pump([
