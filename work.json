@@ -1,5 +1,15 @@
 {"samples": [
 	{
+		"name" : "Yule Be Rockin'",
+		"url":"http://zach.christmas",
+		"img" : "/img/xmas",
+		"gif":false,
+		"role": "Side Project, Xmas Curator",
+		"desc":"A streaming music app of the most painstakingly curated Christmas playlist",
+		"type": "dev",
+		"tech-state":"React JS, Node, Webpack, s3, Howler JS, Web Audio API"
+	},
+	{
 		"name" : "Tazo.com",
 		"url":"http://www.tazo.com",
 		"img" : "/img/tazo",
