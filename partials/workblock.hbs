@@ -1,5 +1,5 @@
 <div class="work">
-<div class="work--thumb" {{#if (isDev type)}} data-gif="{{img}}.gif" {{/if}} style="background-image: url({{'img'}}.jpg)"></div>
+<div class="work--thumb" {{#if (isDev type)}} {{#if gif}} data-gif="{{img}}.gif" {{/if}} {{/if}} style="background-image: url({{'img'}}.jpg)"></div>
 <div class="work--copy"><h2 class="work--header">{{#if url}}<a href="{{url}}">{{name}}</a> {{else}} {{name}} {{/if}}</h2>
 {{#if desc}}<p class="work--detail desc">{{desc}}</p>{{/if}}
 {{!-- <p class="work--detail"><span>role</span>{{role}}</p> --}}

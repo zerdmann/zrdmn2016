@@ -79,7 +79,7 @@
 		}
 	@include breakpoint($desktop) {
 		&:hover:after{
-			visibility: visible;
+			// visibility: visible;
 		}
 		}
 	}

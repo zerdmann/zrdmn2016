@@ -1,13 +1,13 @@
 {"samples": [
 	{
-		"name" : "Yule Be Rockin'",
-		"url":"http://zach.christmas",
-		"img" : "/img/xmas",
+		"name" : "Morningstar.com",
+		"url":"https://beta.morningstar.com",
+		"img" : "img/mstar",
 		"gif":false,
-		"role": "Side Project, Xmas Curator",
-		"desc":"A streaming music app of the most painstakingly curated Christmas playlist",
+		"role": "Senior Consultant",
+		"desc":"Consultant dev on the flagship individual investor product from Morningstar",
 		"type": "dev",
-		"tech-state":"React JS, Node, Webpack, s3, Howler JS, Web Audio API"
+		"tech-state":"Adobe Experience Manager, Java EE, Vanilla JS"
 	},
 	{
 		"name" : "Tazo.com",
@@ -21,28 +21,22 @@
 		"collab":[{"name":"Sam Budd", "url":"http://samanthabudd.com"}, {"name":"Brian Thiel","url":"http://designedbybrian.com"}, {"name":"Alex Coven", "url":"http://www.alexcoven.com/"}]
 	},
 	{
-		"name" : "Upshot Bold Ideas",
-		"img" : "/img/bold",
-		"role": "Lead Developer, Co-Designer",
-		"desc":"An internal app for voting on the best agency ideas and awarding cash prizes",
+		"name" : "Rush Street Gaming",
+		"url":"https://rushstreetgaming.com",
+		"img" : "/img/rush",
+		"gif":false,
+		"role": "Development, QA",
+		"desc":"Custom WordPress theme for casino parent company",
 		"type": "dev",
-		"tech-state":"Node, Meteor JS, LDAP",
-		"collab":[{"name":"Brian Thiel","url":"http://designedbybrian.com"}]
+		"tech-state":"WordPress, SASS, Vanilla JS",
+		"collab":[{"name":"Bright Bright Great", "url":"http://brightbrightgreat.com"}]
+	},
 
-	},
-	{
-		"name" : "Name.Kitchen",
-		"img" : "/img/name",
-		"role": "Lead Developer",
-		"desc":"platform migration from Wordpress to a custom Squarespace theme",
-		"type": "dev",
-		"tech-state":"Node, Express, Squarespace Theme Development",
-		"collab":[{"name":"Athens Chen", "url":"http://athenschen.com/"}]
-	},
 	{
 		"name" : "Breakstones.com",
 		"url":"http://breakstones.com",
 		"img" : "/img/bstones",
+		"gif":true,
 		"role": "Lead Developer",
 		"desc":"Web-App style site on a static site budget",
 		"type": "dev",
@@ -51,9 +45,10 @@
 
 	},
 	{
-		"name" : "GAFW Panorama Prototype",
+		"name" : "Google Panorama Prototype",
 		"url":"https://storage.googleapis.com/gafw-pano-ss-concept/4panel/index.html",
 		"img" : "/img/gafw",
+		"gif":true,
 		"role": "Designer, Developer",
 		"desc":"Prototype \"stitched\" panorama with WebGL Barrel distortion and hotspot animations",
 		"type": "dev",
@@ -61,12 +56,23 @@
 		"collab":[{"name":"Darren Angle", "url":"http://darrenangle.com"}]
 	},
 		{
-		"name" : "Between Yesterday and Tomorrow",
-		"img" : "/img/ruby",
+		"name" : "Yule Be Rockin'",
+		"url":"http://zach.christmas",
+		"img" : "/img/xmas",
+		"gif":false,
+		"role": "Side Project, Xmas Curator",
+		"desc":"A streaming music app of the most painstakingly curated Christmas playlist",
+		"type": "dev",
+		"tech-state":"React JS, Node, Webpack, s3, Howler JS, Web Audio API"
+	},
+		{
+		"name" : "Between Yesterday & Tomorrow",
+		"url":"https://bytfilm.com",
+		"img" : "/img/ruby_prod",
 		"role": "Co-Writer, Producer",
 		"desc":"A lush Sirk melodrama infused with the paranoia of Philip K Dick",
 		"type": "film",
-		"tech-state":"Pre-Production, Shooting 2017",
+		"tech-state":"Financing",
 		"collab":[{"name":"Johnathon Olsen", "url":"https://vimeo.com/selfdestructive"}, {"name":"Kurt Raether","url":"http://kurtraether.com/"}]
 	},
 	{
@@ -76,7 +82,7 @@
 		"role": "Co-Writer",
 		"desc":"A study of the politically motivated murders by abolitionist John Brown ",
 		"type": "film",
-		"tech-state":"on hold, screenplay finished",
+		"tech-state":"in development",
 		"collab":[{"name":"Johnathon Olsen", "url":"https://vimeo.com/selfdestructive"}]
 	}
 ]}
